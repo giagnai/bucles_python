@@ -35,3 +35,41 @@ alguno de lo soportados o no es la palabra "FIN".
 
 print("Mi Calculadora (^_^)")
 # Empezar aquí la resolución del ejercicio
+
+palabra_final = 'INICIO'
+
+while palabra_final != 'FIN':
+    numero_1 = float(input('Ingrese el primer numero: '))
+    numero_2 = float(input('Ingrese el segundo numero: '))
+    operacion = str(input('Ingrese la operacion que desa realizar: '))
+    
+    if operacion == '+':
+        suma = numero_1 + numero_2
+        print('La SUMA es ', suma)
+
+    elif operacion == '-':
+        resta = numero_1 - numero_2
+        print('La RESTA es ', resta)
+
+    elif operacion == '*':
+        multiplicacion = numero_1 * numero_2
+        print('El PRODUCTO da ', multiplicacion)
+
+    elif operacion == '/':
+        division = numero_1 / numero_2
+        print('La DIVISION da ', division)
+
+    elif operacion == '**':
+        potencia = numero_1 ** numero_2
+        print('La POTENCIA da', potencia)
+
+    else:
+        print('Error. Sibolo incorrecto...')
+
+    palabra_final = str(input())
+    
+    if palabra_final == 'FIN':
+        print('Finalizado.')
+    
+    else:
+        print('Error en finalizar la operacion...')
