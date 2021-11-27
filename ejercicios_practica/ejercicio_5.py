@@ -20,7 +20,7 @@ inicio = int(input('Ingrese el primer número de la secuencia\n'))
 fin = int(input('Ingrese el último número de la secuencia\n'))
 sumatoria = 0  # Inicializo el contador en 0
 
-for i in range(inicio,fin):
+for i in range(inicio,fin+1):  #En el range(inicio, fin)-----> debe sumarse uno para que el range pueda incluir ese numero que ingresa en fin sino lo hace con un numero menos.
     sumatoria += i
 
 # Imprimir el valor de la sumatoria

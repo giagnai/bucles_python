@@ -22,7 +22,7 @@ fin = int(input('Ingrese el último número de la secuencia\n'))
 cantidad_numeros_positivos = 0  # Inicializo el contador en 0
 cantidad_numeros_negativos = 0
 
-for i in range(inicio,fin):
+for i in range(inicio,fin+1): #En el range(inicio, fin)-----> debe sumarse uno para que el range pueda incluir ese numero que ingresa en fin sino lo hace con un numero menos.
     if i >= 0:
         cantidad_numeros_positivos += 1
     else:
