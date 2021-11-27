@@ -77,6 +77,10 @@ elif promedio >= 60 and promedio < 70:
 
 elif promedio < 60 and promedio > 0:
     print('F')
-    
+
+#Linea agregada
+else: 
+    print('El promedio no esta en el rango calificativo...')
+
 # Imprima en pantalla al cantidad de ausentes
 print('Notas ausentes: ', cantidad_ausentes)
